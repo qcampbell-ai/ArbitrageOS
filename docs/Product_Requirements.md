@@ -61,7 +61,9 @@ working, disciplined Amazon arbitrage operation with:
 ## Functional Requirements
 
 - The operating spreadsheet must support the full product lifecycle:
-  research → decision → purchase → inventory → sale → profit calculation
+  discovery → validation → decision → purchase → inventory → sale → profit
+  calculation, per the process documented in
+  [`sops/SOP-001-Candidate-Discovery.md`](../sops/SOP-001-Candidate-Discovery.md)
 - The Decision Framework must be enforceable (i.e., visibly gate a
   purchase decision) rather than just informational
 - The Scoreboard must be updatable on a weekly cadence with minimal
@@ -86,8 +88,9 @@ working, disciplined Amazon arbitrage operation with:
 ## Assumptions
 
 - The Founder has ~1 hour/day minimum to commit to operations
-- Amazon Seller Central, Keepa, and SellerAmp SAS remain viable/available
-  sourcing tools for the Amazon arbitrage phase
+- Amazon Seller Central, **free-tier Keepa** (chart/validation use, not
+  Product Finder), and SellerAmp SAS remain viable/available sourcing
+  tools for the Amazon arbitrage phase
 - Google Sheets is sufficient as the operational system of record through
   at least the first phase (see [ADR-0002](../decisions/ADR-0002-Google-Sheets-Is-Operations.md))
 

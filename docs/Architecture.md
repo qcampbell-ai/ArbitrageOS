@@ -81,18 +81,22 @@ consideration, not a current requirement.
 Reserved for future automation alerts (e.g. "Scout found a product that
 passes all 9 tests"). Not yet wired up.
 
-## Data Flow (Current State, Sprint 1–3)
+## Data Flow (Current State, Sprint 1–5)
 
-1. Founder manually researches products using Keepa/SellerAmp SAS
+1. Founder discovers and validates candidates following the documented
+   procedure in [`sops/SOP-001-Candidate-Discovery.md`](../sops/SOP-001-Candidate-Discovery.md)
+   (retail-first discovery, SellerAmp scan, free-tier Keepa chart validation)
 2. Founder enters product data into the **Products** tab
 3. The 9-test Decision Framework (partly automatic — ROI/Profit
    calculated; partly manual — price stability, seasonality, etc.) produces
-   a PASS/FAIL/Needs Review verdict
-4. Founder purchases only on PASS - GO, logging the purchase in
+   a Framework Verdict of PASS-GO/FAIL-SKIP/Needs Review
+4. Atlas scores qualifying candidates using the Capital Allocation
+   Scorecard and issues an Atlas Recommendation (Buy/Wait/Reject)
+5. Founder purchases only on a Buy recommendation, logging the purchase in
    **Purchases** and updating **Inventory**
-5. Sales are logged in **Sales**, feeding **KPIs** and the **Dashboard**
+6. Sales are logged in **Sales**, feeding **KPIs** and the **Dashboard**
    automatically via formula
-6. **Scoreboard** is updated weekly; **Daily Log** is updated daily
+7. **Scoreboard** is updated weekly; **Daily Log** is updated daily
 
 ## Data Flow (Target State, Phase 2)
 
